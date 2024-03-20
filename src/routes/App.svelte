@@ -1,10 +1,27 @@
 <script lang="ts">
-	async function handleClick() {
-		const response = await fetch('/api/lisbon');
-		const data = await response.json();
+	import Form from './Form.svelte';
+	import Card from './Card.svelte';
 
-		console.log(data);
-	}
+	let locations = new Map<string, any>();
+	$: locationKeys = locations.keys();
 </script>
 
-<button on:click={handleClick}>click me</button>
+<Form updateLocations={(data) => (locations = data)} {locations} />
+
+<div class="card_display">
+	{#each locations.keys() as location (location)}
+		<Card location={locations.get(location)} />
+	{/each}
+</div>
+
+<style>
+	.card_display {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+</style>
