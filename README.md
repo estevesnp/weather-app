@@ -23,7 +23,7 @@ node build
 or set the the host and port when running the command itself:
 
 ```bash
-HOST=127.0.0.1 PORT=4000 node build #example
+HOST=127.0.0.1 PORT=4000 node build # example
 ```
 
 For more information on deploying using SvelteKit using a Node server, check out [this link](https://kit.svelte.dev/docs/adapter-node#deploying).

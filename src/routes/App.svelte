@@ -3,7 +3,6 @@
 	import Card from './Card.svelte';
 
 	let locations = new Map<string, any>();
-	$: locationKeys = locations.keys();
 </script>
 
 <Form updateLocations={(data) => (locations = data)} {locations} />

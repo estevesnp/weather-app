@@ -62,5 +62,5 @@
 
 <form>
 	<input bind:value={location} type="text" placeholder="Search" />
+	<button on:click={handleClick}>get info</button>
 </form>
-<button on:click={handleClick}>click me</button>

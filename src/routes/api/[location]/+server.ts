@@ -1,9 +1,9 @@
 import { SECRET_API_KEY } from '$env/static/private';
 import { json } from '@sveltejs/kit';
 
-const BASE_URL = 'http://api.weatherasdasdapi.com/v1/current.json';
-
 // TODO: Add error handling
+const BASE_URL = 'http://api.weatherapi.com/v1/current.json';
+
 export async function GET(requestEvent) {
 	const { params } = requestEvent;
 	const { location } = params;
