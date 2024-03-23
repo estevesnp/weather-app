@@ -12,7 +12,12 @@ npm install
 npm run build
 ```
 
-Afterwards, create a .env file in this directory following the notation of the .example-env file, changing 'YOUR_API_KEY' with your own key.
+Afterwards, create a .env file in this directory with the following notation, changing 'YOUR_API_KEY' with your own key:
+
+```bash
+SECRET_API_KEY=your_api_key
+```
+
 You can get one for free at https://www.weatherapi.com/
 
 ## Preview
