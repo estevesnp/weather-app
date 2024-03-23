@@ -3,12 +3,23 @@
 Weather App in Svelte that calls and handles a RESTful API.
 Allows you to add a card per city.
 
-## Preview
+## Install
 
-To preview this application, first clone the project and then simply run the following commands
+To install the necessary dependencies, run the following commands:
 
 ```bash
-npm run build # only need to run once
+npm install
+npm run build
+```
+
+Afterwards, create a .env file in this directory following the notation of the .example-env file, changing 'YOUR_API_KEY' with your own key.
+You can get one for free at https://www.weatherapi.com/
+
+## Preview
+
+To preview this application, first clone the project and then simply run the following command:
+
+```bash
 npm run preview
 ```
 
